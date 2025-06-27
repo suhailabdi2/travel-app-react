@@ -1,5 +1,8 @@
 *{
   font-family: "Poppins", sans-serif;
+
+}
+body{
   background-color: #B1D9DB;
 }
 .dashboard{
@@ -61,4 +64,47 @@
   border: none;
   color: #FFFFFF;
   font-weight: 700;
+}
+.categories{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.category-title{
+  color: #5E6282;
+  font-size: 15px;
+}
+.services-title{
+  font-weight: 600;
+  color: #14183E;
+  font-size: 25px;
+}
+.services{
+  display: flex;
+  gap: 15px;
+}
+.service{
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.service-img{
+  align-self: center;
+  max-width: 50%;
+}
+.service-name, .service-desc{
+  align-self: center;
+}
+.service-name{
+  font-weight: 400;
+  font: size 15px;
+  color: #1E1D4C
+}
+.service-desc{
+  margin-left: 20px;
+  color: #5E6282;
+  font-size: 12px;
 }
