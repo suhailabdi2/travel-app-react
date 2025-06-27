@@ -1,4 +1,5 @@
 import traveller from "../assets/traveller.png"
+
 function Hero(){
     return(
         <div className="hero">
@@ -8,14 +9,13 @@ function Hero(){
                 <p className="hero-desc">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
                 <div className="hero-btns">
                     <button className="find-more">Find Out More</button>
-                    <button className="play"> Play Demo</button>
+                    
                 </div>
             </div>
             <div className="hero-img-container">
                 <img className="hero-img" src={traveller} alt="image of a female traveller"  />
             </div>
     </div>
-    )
-    
+    )   
 }
 export default Hero;

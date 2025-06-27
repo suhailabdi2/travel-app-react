@@ -49,5 +49,16 @@
   line-height: 30px;
   letter-spacing: 0%;
   color: #5E6282;
-
+}
+.hero-btns{
+  display: flex;
+  gap: 20px;
+}
+.find-more{
+  padding:24px 8px ;
+  background-color: #F1A501;
+  border-radius: 16px;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 700;
 }
