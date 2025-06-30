@@ -1,6 +1,13 @@
+import { useState } from "react";
+import SignUp from "./SignUp";
+
 function Dashboard(){
+    const [openSignUpModal,setopenSignUpModal]=useState(false);
     return(
         <div className="nav">
+            <div>
+                <SignUp openSignUpModal={openSignUpModal} setopenSignUpModal={setopenSignUpModal}/>
+            </div>
             <h1>travel</h1>
             <button className="hamburger">
                 <span></span>
@@ -13,7 +20,7 @@ function Dashboard(){
                 <li>Newsletter</li>
                 <li>SiteMap</li>
             </ul>
-            <button className="signUp"><a href="contact.html">Sign Up</a></button>
+            <button className="signUp" onClick={() => setopenSignUpModal(true)}>Sign Up</button>
         </div>
     )
 }

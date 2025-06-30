@@ -34,7 +34,6 @@ function Destinations(){
     let filtered=locations.filter(
         loc => loc.location.toLowerCase().includes(searchInput.toLowerCase())
     )
-    
     return(
         <div className="locations">
             <h3 className="desc-tagline">Top Selling</h3>
