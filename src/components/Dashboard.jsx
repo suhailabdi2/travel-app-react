@@ -1,19 +1,19 @@
 function Dashboard(){
     return(
-        <div class="nav">
+        <div className="nav">
             <h1>travel</h1>
-            <button class="hamburger">
+            <button className="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-links">
+            <ul className="nav-links">
                 <li>Services</li>
                 <li>Destinations</li>
                 <li>Newsletter</li>
                 <li>SiteMap</li>
             </ul>
-            <button class="signUp"><a href="contact.html">Sign Up</a></button>
+            <button className="signUp"><a href="contact.html">Sign Up</a></button>
         </div>
     )
 }
