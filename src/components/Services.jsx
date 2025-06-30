@@ -7,33 +7,33 @@ export default function Services(){
         {
             title:"Calculated Weather",
             content:"Built Wicket longer admire do barton vanity itself do in it.",
-            img:satellite
+            icon:"fas fa-satellite-dish"
         },
         {
             title:"Best Flights",
             content:"Engrossed listening. Park gate sell they west hard for the.",
-            img:plane
+            icon:"fas fa-satellite-dish"
         },
         {
             title:"Customization",
             content:"We deliver outsorced aviation services for military customers",
-            img:settings
+            icon:"fas fa-satellite-dish"
         },
         {
             title:"Local Events",
             content:"Barton vanity itself do in it. Prefered to men it engrossed listening.",
-            img:mic
+            icon:"fas fa-satellite-dish"
         }
     ]
     return(
-        <div className="categories">
+        <div className="services">
             <h2 className="category-title">CATEGORY</h2>
             <h1 className="services-title">We Offer Best Services</h1>
-            <div className="services">
+            <div className="services-grid">
                 {locations.map(
                     (location,index)=> 
-                        <div className="service" key={index}>
-                            <img className="service-img" src={location.img} alt="" />
+                        <div className="service-card" key={index}>
+                            <i className={location.icon}></i>
                             <h3 className="service-name">{location.title}</h3>
                             <p className="service-desc">{location.content}</p> 
                         </div>

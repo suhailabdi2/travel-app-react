@@ -30,21 +30,23 @@ function Destinations(){
         }
     ]
     return(
-        <div className="destinations">
+        <div className="locations">
             <h3 className="desc-tagline">Top Selling</h3>
             <h1 className="desc-title">Top Destinations</h1>
-            {
+            <div className="destinations-grid">
+                {
                 locations.map((loc,index)=> 
-                    <div key={index}>
+                    <div className="destination-card" key={index}>
                         <img src={loc.img} alt="" />
-                        <div className="dest-desc">
+                        <div className="destination-header">
                             <h3>{loc.location}</h3>
-                            <p>${loc.price}</p>
+                            <p>${loc.price}K</p>
                         </div>
                         <p>{loc.days} days trip</p>
                     </div>
                 )
             }
+            </div>  
         </div>
     )
 }

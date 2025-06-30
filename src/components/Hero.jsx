@@ -2,20 +2,20 @@ import traveller from "../assets/traveller.png"
 
 function Hero(){
     return(
-        <div className="hero">
-            <div className="hero-content">
-                <h3 className="hero-tagline">Best Destinations around the world</h3>
-                <h1 className="hero-title">Travel, enjoy and live a new and full life</h1>
-                <p className="hero-desc">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
-                <div className="hero-btns">
-                    <button className="find-more">Find Out More</button>
-                    
+        <div class="hero">
+            <img src="./images/traveller.png" alt="A traveller with a backpack smiling"/>
+            <div class="description">
+                <p class="tagline">Best Destinations around the world</p>
+                <h1>Travel, enjoy and live a new and full life</h1>
+                <p class="desc"> Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+                <div class="buttons">
+                    <button class="additional-info">Find Out More</button>
+                    <button class="play"></button>
+                    <p>Get Cat Facts</p>
                 </div>
+                
             </div>
-            <div className="hero-img-container">
-                <img className="hero-img" src={traveller} alt="image of a female traveller"  />
-            </div>
-    </div>
+        </div>
     )   
 }
 export default Hero;
