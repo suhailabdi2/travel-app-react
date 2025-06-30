@@ -1,8 +1,11 @@
 const SignUp =({openSignUpModal,setopenSignUpModal}) => {
     return(
-        <div style={{display: openSignUpModal ? "absolute":"none"}}
+        <div style={{display: openSignUpModal ? "block":"none"}}
         className='fixed'>
-            <div onClick={() => setopenSignUpModal(false)} className="cross-btn">X</div>
+            <div onClick={() =>{
+                setopenSignUpModal(false);
+                console.log(openSignUpModal);
+            }} className="cross-btn">X</div>
             <div className="form">
                 <div className="header">
                     <p>New Here?</p>

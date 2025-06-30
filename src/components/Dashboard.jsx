@@ -2,6 +2,7 @@ import { useState } from "react";
 import SignUp from "./SignUp";
 
 function Dashboard(){
+   
     const [openSignUpModal,setopenSignUpModal]=useState(false);
     return(
         <div className="nav">
@@ -20,7 +21,10 @@ function Dashboard(){
                 <li>Newsletter</li>
                 <li>SiteMap</li>
             </ul>
-            <button className="signUp" onClick={() => setopenSignUpModal(true)}>Sign Up</button>
+            <button className="signUp" onClick={() =>{
+                setopenSignUpModal(true);
+                console.log(openSignUpModal);
+            }}>Sign Up</button>
         </div>
     )
 }

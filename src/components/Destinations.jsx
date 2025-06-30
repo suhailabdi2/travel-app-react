@@ -38,7 +38,7 @@ function Destinations(){
         <div className="locations">
             <h3 className="desc-tagline">Top Selling</h3>
             <h1 className="desc-title">Top Destinations</h1>
-            <div class="search-container">
+            <div className="search-container">
                 <input type="text" name="" id="search" placeholder="Search destinations...." onKeyUp={function(e){
                     setsearchInput(e.target.value);
                 }}/>
@@ -47,10 +47,7 @@ function Destinations(){
                     <option value="price">Sort By Price</option>
                     <option value="days">Sort By Days</option>
                 </select>
-                <div id="loading" class="hidden">
-                    <div class="spinner"></div>
-                </div>
-                <div id="error" class="hidden"></div>
+            
             </div>
             <div className="destinations-grid">
                 {
